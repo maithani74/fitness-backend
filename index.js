@@ -18,5 +18,5 @@ app.use("/api/v1/user",userRoute.router)
 connectDb()
 
 app.listen(process.env.PORT,()=>{
-    console.log("Server started at port 8080")
+    console.log(`Server started at port ${process.env.PORT}` )
 })
